@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automate Your Dropbox File Management with n8n</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #374151;
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .step-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+        }
+        
+        .step-card:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <div class="container">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Automate Your Dropbox File Management with n8n</h1>
+            <img src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-cool-sphere-1170x780.jpg" alt="Hero Image" class="rounded-xl shadow-lg mb-6">
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Want to automate your file management within Dropbox? This tutorial will guide you through connecting n8n to your Dropbox account, enabling seamless automation of your file workflows.
+            </p>
+        </header>
+
+        <div class="space-y-8">
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 1: Create a Dropbox App</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Dropbox Developers" class="rounded-lg mb-4">
+                <p>Navigate to <a href="https://www.dropbox.com/developers/apps" class="text-blue-600 hover:text-blue-800">Dropbox.com/developers/apps</a> and click "Create App".</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 2: Choose Scoped Access</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Scoped Access" class="rounded-lg mb-4">
+                <p>Select "Scoped Access" and choose the access level: either access to your entire Dropbox account or a specific folder. This example uses full account access.</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 3: Name Your App</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Name Your App" class="rounded-lg mb-4">
+                <p>Give your app a descriptive name (e.g., "n8n Integration").</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 4: Create the App and Generate Access Token</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Create App" class="rounded-lg mb-4">
+                <p>Click "Create App". Once created, scroll down to "Generated Access Token" and click "Generate". Copy this key; you'll need it in the next step.</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 5: Add a New Node in n8n</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="n8n New Node" class="rounded-lg mb-4">
+                <p>In your n8n workflow, add a new node. Search for the "Dropbox" node.</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 6: Create n8n Credentials</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="n8n Credentials" class="rounded-lg mb-4">
+                <p>Create new credentials, select "Access Token", paste the key you copied from Dropbox, and click "Save".</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 7: Test the Connection</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Test Connection" class="rounded-lg mb-4">
+                <p>Test the connection to ensure n8n is successfully connected to your Dropbox account.</p>
+            </div>
+
+            <div class="step-card p-6 bg-white">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Step 8: Connection Successful!</h2>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Connection Successful" class="rounded-lg mb-4">
+                <p>You've successfully connected Dropbox to n8n!</p>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center py-8 bg-blue-600 text-white rounded-xl">
+            <p class="text-xl mb-4">Now you can start automating your Dropbox workflows! For more advanced tips and tricks with n8n, check out my other videos!</p>
+            <p class="text-sm opacity-75">© 2025 Automate Your Workflows. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
