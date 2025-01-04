@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Directory</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #374151;
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .blog-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .blog-list li {
+            margin: 1rem 0;
+        }
+        
+        .blog-list a {
+            color: #1d4ed8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .blog-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <div class="container">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Blog Directory</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Welcome to our blog directory. Click on a blog post to read more.
+            </p>
+        </header>
+        
+        <ul class="blog-list">
+            <li><a href="first-blog.html">First Blog Post</a></li>
+            <!-- Add more blog links here -->
+        </ul>
+    </div>
+</body>
+</html>
